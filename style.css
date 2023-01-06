@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+/* common */
+
+body {
+  margin: 0;
+  color: #2B2A27;
+  font-family: Helvetica Neue, Arial, Hiragino Sans, Meiryo, sans-serif;
+}
+
+h1 {
+  font-size: 28px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  opacity: .8;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* recipe */
+
+.recipe .flex {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.recipe .pic {
+  width: 50%;
+}
+
+.recipe .pic img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+.recipe .text {
+  width: 50%;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
+.recipe h1 {
+  margin: 30px 0;
+}
+
+.recipe p {
+  margin-bottom: 30px;
+}
+
+.recipe h2 {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 5px;
+}
+
+.recipe dl {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.recipe dt {
+  width: 85%;
+  /* ↑文字数が増えることを考えて、こっちの方を大きめに設定 */
+  padding: 6px 0;
+  border-bottom: 1px dotted lightgray;
+}
+
+.recipe dd {
+  margin: 0;
+  width: 15%;
+  text-align: right;
+  padding: 6px 0;
+  border-bottom: 1px dotted lightgray;
+}
+
+.recipe ol {
+  padding-left: 20px;
+}
+
+.recipe li {
+  padding: 6px 0;
+  border-bottom: 1px dotted lightgray;
+}
+
+.recipe a {
+  display: block;
+  padding: 15px;
+  line-height: 20px;
+  text-align: center;
+  width: 200px;
+  border: 1px solid #2B2A27;
+  margin: 0 auto 80px auto;
+}
+  
+  /* footer */
+
+footer {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 20px;
+  padding: 0;
+}
+
+@media (max-width: 834px) {
+  .recipe .flex {
+    /* display: block; */
+    flex-direction: column;
+  }
+
+  .recipe .pic {
+    width: 100%;
+  }
+
+  .recipe .pic img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .recipe .text {
+    width: 100%;
+  }
+}
